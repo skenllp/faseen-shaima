@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Muhammed Faseeen &amp; Shaima — Wedding Invitation</title>
+  <meta name="description"
+    content="Join us as we celebrate the wedding of Muhammed Faseeen &amp; Shaima — Saturday, 15 August 2026.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Muhammed Faseeen &amp; Shaima — Wedding Invitation">
+  <meta property="og:description" content="Saturday, 15 August 2026 · Meruzila Convention Centre, Elettil Vattoli">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Tangerine:wght@400;700&family=Marcellus&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= AMBIENT PARTICLES (site-wide) ================= -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- ================= ENVELOPE INTRO ================= -->
+  <div id="envelope-gate" class="envelope-gate" role="button" tabindex="0"
+    aria-label="Click or tap anywhere to open invitation">
+    <video id="envelope-video" class="envelope-video" src="vedio.mp4" muted playsinline preload="auto"></video>
+
+    <div class="envelope-hint" aria-hidden="true">
+      <span>Tap anywhere to open</span>
+    </div>
+  </div>
+
+  <!-- ================= MAIN SITE ================= -->
+  <main id="site" class="site" hidden>
+
+    <!-- ---- HERO ---- -->
+    <section class="hero">
+      <picture class="hero-responsive-pic reveal">
+        <source media="(max-width: 640px)" srcset="mobile.png">
+        <source media="(max-width: 768px)" srcset="tablet.png">
+        <img src="desktop.png" alt="Muhammed Faseeen &amp; Shaima — Wedding Invitation" class="hero-responsive-img">
+      </picture>
+
+      <!--
+    <div class="hero-frame reveal">
+      <div class="hero-monogram" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 3"/>
+          <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="1"/>
+          <path d="M50 8v8M50 84v8M8 50h8M84 50h8" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <text x="50" y="58" text-anchor="middle" font-size="28" fill="currentColor" font-family="Tangerine, cursive">F&amp;S</text>
+        </svg>
+      </div>
+      <p class="eyebrow">Together with their families</p>
+      <h1 class="hero-names">
+        <span class="name-first">Muhammed Faseeen</span>
+        <span class="amp">&amp;</span>
+        <span class="name-second">Shaima</span>
+      </h1>
+      <div class="hero-divider" aria-hidden="true">
+        <span class="diamond">◆</span>
+      </div>
+      <p class="hero-quote">"Two lives, two hearts, joined together in friendship and united forever in love."</p>
+      <div class="hero-date-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <rect x="3" y="4.5" width="18" height="16" rx="2"></rect>
+          <path d="M3 9.5h18M8 2.5v4M16 2.5v4"></path>
+        </svg>
+        <span>Saturday · 15 August 2026</span>
+      </div>
+    </div>
+
+    <a href="#details" class="scroll-cue reveal" aria-label="Scroll to wedding details">
+      <span class="scroll-cue-line"></span>
+    </a>
+    -->
+    </section>
+
+    <!-- ---- DETAILS ---- -->
+    <section id="details" class="details">
+      <p class="eyebrow reveal">Join Us</p>
+      <h2 class="section-title reveal">Wedding Details</h2>
+      <div class="title-underline reveal" aria-hidden="true"></div>
+
+      <div class="cards">
+        <div class="card reveal">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+            aria-hidden="true">
+            <rect x="3" y="4.5" width="18" height="16" rx="2"></rect>
+            <path d="M3 9.5h18M8 2.5v4M16 2.5v4"></path>
+          </svg>
+          <p class="card-label">Date</p>
+          <p class="card-main">Saturday</p>
+          <p class="card-sub">15 August 2026</p>
+        </div>
+
+        <div class="card reveal">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M12 7v5l3.2 2"></path>
+          </svg>
+          <p class="card-label">Time</p>
+          <p class="card-main">11:00 AM</p>
+          <p class="card-sub">Onwards</p>
+        </div>
+
+        <div class="card reveal">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+            aria-hidden="true">
+            <path d="M12 21s7-6.2 7-11.5A7 7 0 1 0 5 9.5C5 14.8 12 21 12 21Z"></path>
+            <circle cx="12" cy="9.5" r="2.4"></circle>
+          </svg>
+          <p class="card-label">Venue</p>
+          <p class="card-main">Meruzila Convention<br>Centre</p>
+          <p class="card-sub card-link">Elettil Vattoli</p>
+        </div>
+      </div>
+
+      <a class="view-location-btn reveal" id="view-location"
+        href="https://www.google.com/maps/search/?api=1&query=Meruzila+Convention+Centre+Elettil+Vattoli"
+        target="_blank" rel="noopener">View Location</a>
+    </section>
+
+    <!-- ---- COUNTDOWN ---- -->
+    <section class="countdown-section">
+      <div class="countdown-card reveal">
+        <p class="eyebrow">Counting Down</p>
+        <h2 class="section-title">Until The Celebration</h2>
+        <div class="title-underline" aria-hidden="true"></div>
+
+        <div class="countdown" id="countdown" aria-label="Time remaining until the wedding">
+          <div class="count-box"><span id="cd-days">00</span><small>Days</small></div>
+          <div class="count-box"><span id="cd-hours">00</span><small>Hours</small></div>
+          <div class="count-box"><span id="cd-mins">00</span><small>Minutes</small></div>
+          <div class="count-box"><span id="cd-secs">00</span><small>Seconds</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- CLOSING ---- -->
+    <section class="closing">
+      <div class="seal reveal" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="1.2" />
+          <circle cx="50" cy="50" r="36" stroke="currentColor" stroke-width="1" />
+          <text x="50" y="57" text-anchor="middle" font-size="30" fill="currentColor"
+            font-family="Tangerine, cursive">F&amp;S</text>
+        </svg>
+      </div>
+      <p class="closing-text reveal">With love and gratitude,<br>we can't wait to celebrate with you.</p>
+      <p class="closing-names reveal">Muhammed Faseeen &amp; Shaima</p>
+    </section>
+
+  </main>
+
+  <!-- ================= MUSIC CONTROL ================= -->
+  <button id="music-toggle" class="music-toggle" type="button" aria-label="Play background music" hidden>
+    <svg class="icon-note" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"
+        stroke-linejoin="round" />
+      <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.4" fill="none" />
+      <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.4" fill="none" />
+    </svg>
+    <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+  <audio id="bg-music" src="music.mp3" loop preload="none"></audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
