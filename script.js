@@ -200,10 +200,10 @@
   }
 
   /* =========================================================
-     3. COUNTDOWN — to 15 August 2026, 11:00 local time
+     3. COUNTDOWN — to 15 August 2026, 14:30 local time
      ========================================================= */
   function initCountdown() {
-    var target = new Date("2026-08-15T11:00:00");
+    var target = new Date("2026-08-15T14:30:00");
     var els = {
       days: document.getElementById("cd-days"),
       hours: document.getElementById("cd-hours"),
